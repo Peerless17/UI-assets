@@ -1,0 +1,97 @@
+.favorite-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.favorite-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.favorite-btn:active {
+    transform: scale(0.95);
+}
+
+.star-icon {
+    width: 20px;
+    height: 20px;
+    color: #ffd700;
+    transition: all 0.2s ease;
+}
+
+.favorite-btn:not(.favorited) .star-icon {
+    color: #999;
+}
+
+.favorite-btn.favorited {
+    background: rgba(255, 215, 0, 0.1);
+}
+
+.favorite-btn.favorited .star-icon {
+    color: #ffd700;
+    fill: #ffd700;
+}
+
+.exportimportbuttons {
+    background: #121212;
+    border: 1px solid #3f3f46;
+    border-radius: 8px;
+    padding: 10px 16px;
+    color: #f1f5f9;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s;
+    text-align: left;
+}
+
+.favorites-actions {
+    display: flex;
+    gap: 10px;
+    height: fit-content;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.resource-card {
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .favorite-btn {
+        width: 32px;
+        height: 32px;
+        top: 8px;
+        right: 8px;
+    }
+    
+    .star-icon {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .favorites-actions {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    
+    .favorites-actions button {
+        flex: 1;
+    }
+}
