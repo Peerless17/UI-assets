@@ -1,0 +1,215 @@
+.sidebar {
+    width: 260px;
+    background: #0a0a0a;
+    border-right: 1px solid #27272a;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    padding-left: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #27272a;
+}
+        
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    background: #e5e5e5;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.nav {
+    flex: 1;
+    padding: 16px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 0;
+    margin-bottom: 8px;
+    color: #e5e5e5;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+    background: none;
+    width: 100%;
+    font-size: 16px;
+    text-align: left;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.nav-item:hover {
+    color: #fff;
+}
+
+.nav-item.active {
+     color: #6366f1;
+}
+
+.sidebar-footer {
+    padding: 16px;
+    border-top: 1px solid #27272a;
+}
+
+.mobile-header {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu-overlay {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .mobile-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 20px;
+        border-bottom: 1px solid #1a1a1a;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .mobile-logo {
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: #fff;
+        transition: all 0.3s ease;
+        border-radius: 2px;
+    }
+
+    .mobile-menu-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 998;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .mobile-menu-overlay.active {
+        display: block;
+        opacity: 1;
+    }
+
+    .mobile-menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 260px;
+        height: 100vh;
+        background: #0a0a0a;
+        z-index: 999;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        overflow-y: auto;
+    }
+
+    .mobile-menu.active {
+        transform: translateX(0);
+    }
+
+    .mobile-menu-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        border-bottom: 1px solid #1a1a1a;
+    }
+
+    .mobile-menu-logo {
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .mobile-close {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-nav {
+        padding: 20px;
+    }
+
+    .mobile-nav-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 14px 0;
+        margin-bottom: 8px;
+        color: #e5e5e5;
+        cursor: pointer;
+        transition: all 0.2s;
+        border: none;
+        background: none;
+        width: 100%;
+        font-size: 16px;
+        text-align: left;
+        border-bottom: 1px solid #1a1a1a;
+    }
+
+    .mobile-nav-item:hover {
+        color: #fff;
+    }
+
+    .mobile-nav-item.active {
+        color: #6366f1;
+    }
+
+    .main-content {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .container {
+        display: block;
+    }
+}
