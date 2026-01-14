@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4KEX4KFZ3Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4KEX4KFZ3Z');
+</script>
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Resources for Designers and Roblox Designers! | Effects, Plugins, Tutorials & Tools</title>
+    <meta name="description" content="A global UI resources website made for UI Designers, be able to find effects, plugins, tutorials, websites all in one place!" />
+    <meta property="og:title" content="UI Resources" />
+    <meta property="og:description" content="A global UI resources website made for UI Designers, be able to find effects, plugins, tutorials, websites all in one place!" />
+    <meta property="og:type" content="website" />
+      <link rel="canonical" href="https://ui-resources.com/" />
+    <meta property="og:image" content="https://ui-resources.com/websiteassets/siteBanner.png" /> 
+    <meta name="theme-color" content="#9e50f1" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="UI Resources" />
+    <meta name="twitter:description" content="A global UI resources website made for UI Designers, be able to find effects, plugins, tutorials, websites all in one place!" />
+    <meta name="twitter:image" content="https://ui-resources.com/websiteassets/siteBanner.png" />
+    <link rel="icon" href="https://ui-resources.com/websiteassets/Icon.png" />
+<link rel="stylesheet" href="/css/sidebarcsscode.css"> 
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/resourcespage.css">
+<link rel="stylesheet" href="components/notifications/css.css">
+</head>
+<body>
+    <div class="canvas"> 
+        <div class="mobile-header">
+            <div class="mobile-logo">UI Resources</div>
+            <button class="hamburger" id="hamburger" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+                <div class="mobile-menu-logo">UI Resources</div>
+                <button class="mobile-close" onclick="closeMobileMenu()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <nav class="mobile-nav">
+                <button class="mobile-nav-item active" onclick="window.location.href='/'">
+                    <span>Resources</span>
+                </button>
+                <button class="mobile-nav-item" onclick="window.location.href='docs'">
+                    <span>Docs</span>
+                </button>
+                <button class="mobile-nav-item" onclick="window.location.href='tips'">
+                    <span>Tips</span>
+                </button>
+                <button class="mobile-nav-item" onclick="window.location.href='contributors'">
+                    <span>Contributors</span>
+                </button>
+                <button class="mobile-nav-item" onclick="window.location.href='Suggest'">
+                    <span>Suggest</span>
+                </button>
+                <button class="mobile-nav-item" onclick="window.location.href='updates'">
+                    <span>Updates</span>
+                </button>
+                <button class="mobile-nav-item" onclick="window.location.href='guides'">
+                    <span>Guides</span>
+                </button>
+            </nav>
+            <h4 style="text-align: center;;" >Favorites manager</h4>
+            <div class="favorites-actions">
+                <button class="exportimportbuttons" onclick="exportFavorites()" style="padding: 8px 16px; font-size: 14px;">
+                    Export
+                </button>
+                <button class="exportimportbuttons" onclick="importFavorites()" style="padding: 8px 16px; font-size: 14px;">
+                    Import
+                </button>
+            </div>
+            <p style="text-align: center; margin-bottom: 15px; color: rgb(192, 192, 192);">Founded by stuxfian</p>
+        </div>
+        
+        <div class="container">
+            <aside id="sidebar" class="sidebar">
+                <div class="sidebar-header">
+                    <div class="logo">ResourceHub</div>
+                </div>
+                <nav class="nav">
+                    <button id="Resources" class="nav-item active" onclick="window.location.href='/'">
+                    <span>Resources</span>
+                    </button>
+                    <button id="Docs" class="nav-item" onclick="window.location.href='docs'">
+                    <span>Docs</span>
+                    </button>
+                    <button id="Tips" class="nav-item" onclick="window.location.href='tips'">
+                    <span>Tips</span>
+                    </button>
+                    <button id="Contributors" class="nav-item" onclick="window.location.href='contributors'">
+                    <span>Contributors</span>
+                    </button>
+                    <button id="Suggest" class="nav-item" onclick="window.location.href='Suggest'">
+                    <span>Suggest</span>
+                    </button>
+                    <button id="Updates" class="nav-item" onclick="window.location.href='updates'">
+                    <span>Updates</span>
+                    </button>
+                    <button id="Guides" class="nav-item" onclick="window.location.href='/guides'">
+                    <span>Guides</span>
+                    </button>
+                </nav>
+                <h4 style="text-align: center;;" >Favorites manager</h4>
+                <div class="favorites-actions">
+                    <button class="exportimportbuttons" onclick="exportFavorites()" style="padding: 8px 16px; font-size: 14px;">
+                        Export
+                    </button>
+                    <button class="exportimportbuttons" onclick="importFavorites()" style="padding: 8px 16px; font-size: 14px;">
+                        Import
+                    </button>
+                </div>
+                <p style="text-align: center; margin-bottom: 15px; color: rgb(192, 192, 192);">Founded by stuxfian</p>
+            </aside>
+            <main class="main-content">
+                <!--<div  style="height: fit-content; padding-top: 10px;" class="filter-bar-container">
+                    <h3 style="text-align: center;" >Domain been switched for now.</h3>
+                </div>-->
+                <div class="filter-bar-container">
+                    <div class="filter-bar">
+                        <div class="filter-controls">
+                            <div class="search-box">
+                                <input type="text" id="searchInput" placeholder="Search resources..." oninput="filterResources()">
+                                <svg class="search-icon icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                </svg>
+                            </div>
+                            <select id="categoryFilter" onchange="filterResources()">
+                                <option value="all">All Categories</option>
+                                <option value="Websites">Websites</option>
+                                <option value="Software">Software</option>
+                                <option value="Effects">Effects</option>
+                                <option value="Textures">Textures</option>
+                                <option value="Icons">Icons</option>
+                                <option value="Backgrounds">Backgrounds</option>
+                                <option value="Plugins">Plugins</option>
+                                <option value="Renders">Renders</option>
+                                <option value="Tutorials">Tutorials</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <select id="typeFilter" onchange="filterResources()">
+                                <option value="all">All Tags</option>
+                                <option value="Halftones">Halftones</option>
+                                <option value="Corners">Corners</option>
+                                <option value="Sunbursts">Sunbursts</option>
+                                <option value="Stars">Stars</option>
+                                <option value="Waves">Waves</option>
+                                <option value="Lines">Lines</option>
+                                <option value="Patterns">Patterns</option>
+                                <option value="Roblox">Roblox</option> 
+                                <option value="Figma">Figma</option>
+                                <option value="Plugins">Plugins</option>
+                                <option value="Undefined">Undefined</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="resources-section">
+                    <div class="resources-header">
+                        <h2 id="resultsCount">2 Resources Found</h2>
+                    </div>
+                    <div id="resourcesContainer"></div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <image-enlarge></image-enlarge>
+    <script src="/js/resourcespage.js"></script>
+    <script src="/js/components.js"></script>
+    <script src="/js/imagemodal.js"></script>
+    <script src="/js/sidebar.js"></script>
+<!--
+<div id="actionNotice" class="action-notice">
+    <p>would you want quick to easy follow guides in a seperate page (guides) or in the resources page under a seperate category?</p>
+    <div class="action-buttons">
+        <button onclick="sendAction('guides under a seperate category in the resources page')">Resources page</button>
+        <button class="secondary" onclick="sendAction('Seperate page for guides')">Seperate page</button>
+    </div>
+</div>
+-->
+</body>
+</html>
